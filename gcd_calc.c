@@ -23,12 +23,8 @@ void count(int x, int y)
     quotient = dividend / divisor;
     remainder = dividend % divisor;
     printf("\n%d : %d = %d  |  remainder (%d)", dividend, divisor, quotient, remainder);
-    if (remainder != 0){
-        count(divisor, remainder); //recursive
-    } 
-    else{
-        printf("\n\nGCD dari %d dan %d adalah *%d*", a, b, divisor);
-    }
+    if (remainder != 0) count(divisor, remainder); //recursive
+    else printf("\n\nGCD dari %d dan %d adalah *%d*", a, b, divisor);
 } 
 
 int main ()
